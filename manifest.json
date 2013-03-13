@@ -1,0 +1,17 @@
+{
+  "name": "Humbot Spy",
+  "description": "Scrapes Humbug messages and sends them to your server.",
+  "manifest_version": 2,
+  "version": "0.0.1",
+
+  "content_scripts": [
+    {
+      "matches": ["https://humbughq.com/*"],
+      "js": ["listener.js"]
+    }
+  ],
+
+  "permissions": [
+    "http://localhost:5000/*"
+  ]
+}
